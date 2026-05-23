@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jejurikar Vlogs</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    /* Header */
+    header{
+      background:#000;
+      padding:15px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#ff0000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ff0000;
+    }
+
+    /* Hero Section */
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.6);
+      padding:40px;
+      border-radius:10px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+      color:#ff0000;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      padding:12px 25px;
+      background:#ff0000;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      color:#ff0000;
+    }
+
+    /* About */
+    .about{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .about h2{
+      font-size:40px;
+      margin-bottom:20px;
+      color:#ff0000;
+    }
+
+    .about p{
+      max-width:800px;
+      margin:auto;
+      font-size:18px;
+      line-height:1.8;
+    }
+
+    /* Videos Section */
+    .videos{
+      padding:60px 20px;
+      background:#1a1a1a;
+    }
+
+    .videos h2{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:40px;
+      color:#ff0000;
+    }
+
+    .video-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:20px;
+    }
+
+    .video-card{
+      background:#222;
+      border-radius:10px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .video-card:hover{
+      transform:scale(1.03);
+    }
+
+    .video-card iframe{
+      width:100%;
+      height:220px;
+    }
+
+    .video-card h3{
+      padding:15px;
+      text-align:center;
+    }
+
+    /* Contact */
+    .contact{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:40px;
+      margin-bottom:20px;
+      color:#ff0000;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:20px;
+      margin-top:20px;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Jejurikar Vlogs</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Jejurikar Vlogs</h1>
+      <p>Travel • Lifestyle • Adventures • Daily Vlogs</p>
+
+      <a href="https://youtube.com" class="btn" target="_blank">
+        Subscribe Now
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+
+    <p>
+      Jejurikar Vlogs is a YouTube vlog channel sharing travel experiences,
+      village life, food, festivals, adventures, and lifestyle videos.
+      Follow our journey and explore amazing places with us.
+    </p>
+  </section>
+
+  <!-- Videos -->
+  <section class="videos" id="videos">
+    <h2>Latest Videos</h2>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          frameborder="0" allowfullscreen></iframe>
+        <h3>Travel Vlog Episode 1</h3>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          frameborder="0" allowfullscreen></iframe>
+        <h3>Village Lifestyle Vlog</h3>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          frameborder="0" allowfullscreen></iframe>
+        <h3>Adventure Ride Vlog</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: jejurikarvlogs@gmail.com</p>
+    <p>YouTube: Jejurikar Vlogs</p>
+    <p>Instagram: @jejurikar_vlogs</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jejurikar Vlogs | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
